@@ -26,7 +26,6 @@
         android:layout_marginEnd="16dp"
         android:singleLine="true"
         android:ellipsize="end"
-        android:text="TextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/published"
         app:layout_constraintStart_toEndOf="@id/avatar"
@@ -61,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_more_vert_24"
-         />
+        android:contentDescription="В" />
 
     <androidx.constraintlayout.widget.Barrier
     android:id="@+id/barrier"
@@ -98,7 +97,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barrier2"
         app:srcCompat="@drawable/ic_baseline_favorite_border_24"
-        app:tint="#060B0B" />
+        app:tint="#060B0B"
+        android:contentDescription="в" />
     <TextView
         android:id="@+id/textLikes"
         android:textSize="18dp"
